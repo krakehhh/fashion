@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Потрачено</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header header-index" id="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="./images/icons/logo.svg" alt="">
+          </a>
+          <div class="header__info">
+            <nav class="menu-top">
+              <ul class="menu-top__list">
+                <li class="menu-top__item">
+                  <a class="menu-top__link" href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="menu-top__item">
+                  <a class="menu-top__link" href="menu.html">
+                    Меню
+                  </a>
+                </li>
+                <li class="menu-top__item dropdown">
+                  <a class="menu-top__link dropbtn" href="#">
+                    Еще...
+                  </a>
+                  <div class="dropdown-content">
+                    <a href="report.html">Фотоотчеты</a>
+                    <a href="rules.html">Правила заведения</a>
+                  </div>
+                </li>
+                <li class="menu-top__item menu-top__item--mob">
+                  <a class="menu-top__link" href="report.html">
+                    Фотоотчеты
+                  </a>
+                </li>
+                <li class="menu-top__item menu-top__item--mob">
+                  <a class="menu-top__link" href="rules.html">
+                    Правила заведения
+                  </a>
+                </li>
+              </ul>
+              <a class="header__btn" href="#">Забронировать</a>
+            </nav>
+            <a class="tel" href="#" data-modal="#modal-call">
+              <img class="tel__img" src="./images/icons/tel.svg" alt="">
+            </a>
+            <a class="header__btn  header__btn--mobile" href="#" data-modal="#modal-call">Забронировать</a>
+            <button class="menu__btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="modal" id="modal-call">
+    <div class="modal__container">
+      <div class="modal__box">
+        <div class="modal__title">Оставьте заявку и мы вам перезвоним</div>
+        <form class="modal__form" action="#">
+          <input class="modal__input-name" type="text" placeholder="Ваше Имя" required>
+          <input class="modal__input-tel" type="text" placeholder="+7 (999) 999-99-99" required>
+          <button class="modal__link" type="submit">Оставить заявку</button>
+        </form>
+        <p class="modal__text">
+          Нажимая на кнопку "Оставить заявку", вы даете согласие на обработку персональных данных
+        </p>
+        <div class="modal__box-img" data-close>
+          <a class="modal__box-link" href="#">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 1L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M1 1L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__inner">
+          <h3 class="title">Фотоотчеты</h3>
+          <p class="gallery__text">haloween party 2021</p>
+          <div class="gallery__items">
+
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/1.jpg" data-fancybox="gallery" data-width="2400"
+                data-height="1600">
+                <img class="gallery__img" src="./images/gallery/1.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/2.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/2.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/3.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/3.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/4.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/4.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/5.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/5.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/6.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/6.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/7.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/7.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/8.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/8.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/9.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/9.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/10.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/10.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/11.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/11.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/12.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/12.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/13.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/13.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/14.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/14.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/15.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/15.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/16.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/16.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/17.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/17.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/18.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/18.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/19.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/19.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/20.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/20.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/21.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/21.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/22.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/22.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/23.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/23.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__link" href="./images/gallery/24.jpg" data-fancybox="gallery" data-width="2400" data-height="1600">
+                <img class="gallery__img" src="./images/gallery/24.jpg" alt="">
+                <img class="gallery__magnifier" src="./images/icons/magnifier.svg" alt="">
+              </a>
+            </div>
+
+          </div>
+          <ul class="report__list">
+            <li class="report__item">
+              <a class="report__link report__link--active" href="#">1</a>
+            </li>
+            <li class="report__item">
+              <a class="report__link" href="#">2</a>
+            </li>
+            <li class="report__item">
+              <a class="report__link" href="#">3</a>
+            </li>
+            <li class="report__item">
+              <a class="report__link" href="#">4</a>
+            </li>
+            <li class="report__item">
+              <a class="report__link" href="#">5</a>
+            </li>
+            <li class="report__item">
+              <a class="report__link" href="#">6</a>
+            </li>
+            <li class="report__item">
+              <a class="report__link" href="#">7</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./images/icons/logo.svg" alt="">
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Главная
+              </a>
+              <a class="footer__link" href="#">
+                Меню
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Акции
+              </a>
+              <a class="footer__link" href="#">
+                Интерьер
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Команда
+              </a>
+              <a class="footer__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="footer__contacts">
+            <a class="footer__tel" href="tel:+78009999999">8 (800) 999-99-99</a>
+            <p class="footer__time">Бронь столов с 09:00 до 19:00</p>
+            <div class="footer__messenger">
+              <a class="footer__messenger-link" href="#">
+                <img class="footer__messenger-img" src="./images/icons/telegram.svg" alt="">
+              </a>
+              <a class="footer__messenger-link" href="#">
+                <img class="footer__messenger-img" src="./images/icons/viber.svg" alt="">
+              </a>
+              <a class="footer__messenger-link" href="#">
+                <img class="footer__messenger-img" src="./images/icons/inst.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a class="footer__bottom-link" href="#">Политика конфидециальности</a>
+          <a class="footer__bottom-link" href="#">Договор оферты</a>
+          <p class="footer__bottom-text">Информация на сайте не является публичной офертой</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>

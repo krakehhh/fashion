@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Потрачено</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header header-index" id="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="./images/icons/logo.svg" alt="">
+          </a>
+          <div class="header__info">
+            <nav class="menu-top">
+              <ul class="menu-top__list">
+                <li class="menu-top__item">
+                  <a class="menu-top__link" href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="menu-top__item">
+                  <a class="menu-top__link" href="menu.html">
+                    Меню
+                  </a>
+                </li>
+                <li class="menu-top__item dropdown">
+                  <a class="menu-top__link dropbtn" href="#">
+                    Еще...
+                  </a>
+                  <div class="dropdown-content">
+                    <a href="report.html">Фотоотчеты</a>
+                    <a href="rules.html">Правила заведения</a>
+                  </div>
+                </li>
+                <li class="menu-top__item menu-top__item--mob">
+                  <a class="menu-top__link" href="report.html">
+                    Фотоотчеты
+                  </a>
+                </li>
+                <li class="menu-top__item menu-top__item--mob">
+                  <a class="menu-top__link" href="rules.html">
+                    Правила заведения
+                  </a>
+                </li>
+              </ul>
+              <a class="header__btn" href="#">Забронировать</a>
+            </nav>
+            <a class="tel" href="#" data-modal="#modal-call">
+              <img class="tel__img" src="./images/icons/tel.svg" alt="">
+            </a>
+            <a class="header__btn  header__btn--mobile" href="#" data-modal="#modal-call">Забронировать</a>
+            <button class="menu__btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="modal" id="modal-call">
+    <div class="modal__container">
+      <div class="modal__box">
+        <div class="modal__title">Оставьте заявку и мы вам перезвоним</div>
+        <form class="modal__form" action="#">
+          <input class="modal__input-name" type="text" placeholder="Ваше Имя" required>
+          <input class="modal__input-tel" type="text" placeholder="+7 (999) 999-99-99" required>
+          <button class="modal__link" type="submit">Оставить заявку</button>
+        </form>
+        <p class="modal__text">
+          Нажимая на кнопку "Оставить заявку", вы даете согласие на обработку персональных данных
+        </p>
+        <div class="modal__box-img" data-close>
+          <a class="modal__box-link" href="#">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 1L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M1 1L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <section class="interior">
+      <div class="container">
+        <div class="interior__inner">
+          <h3 class="interior__title title">Интерьер заведения</h3>
+          <div class="interior__wrapper">
+            <div class="interior__slider">
+              <div class="interior__slider-inner">
+                <div class="interior__slider-item">
+                  <a class="interior__slider-link" href="./images/interior/1.jpg" data-fancybox="interior" data-width="2400"
+                    data-height="1600">
+                    <img class="interior__slider-img" src="./images/interior/1.jpg" alt="">
+                    <img class="interior__slider-magnifier" src="./images/icons/magnifier.svg" alt="">
+                  </a>
+                </div>
+                <div class="interior__slider-item">
+                  <a class="interior__slider-link" href="./images/interior/2.jpg" data-fancybox="interior" data-width="2400"
+                    data-height="1600">
+                    <img class="interior__slider-img" src="./images/interior/2.jpg" alt="">
+                    <img class="interior__slider-magnifier" src="./images/icons/magnifier.svg" alt="">
+                  </a>
+                </div>
+                <div class="interior__slider-item">
+                  <a class="interior__slider-link" href="./images/interior/3.jpg" data-fancybox="interior" data-width="2400"
+                    data-height="1600">
+                    <img class="interior__slider-img" src="./images/interior/3.jpg" alt="">
+                    <img class="interior__slider-magnifier" src="./images/icons/magnifier.svg" alt="">
+                  </a>
+                </div>
+                <div class="interior__slider-item">
+                  <a class="interior__slider-link" href="./images/interior/4.jpg" data-fancybox="interior" data-width="2400"
+                    data-height="1600">
+                    <img class="interior__slider-img" src="./images/interior/4.jpg" alt="">
+                    <img class="interior__slider-magnifier" src="./images/icons/magnifier.svg" alt="">
+                  </a>
+                </div>
+                <div class="interior__slider-item">
+                  <a class="interior__slider-link" href="./images/interior/5.jpg" data-fancybox="interior" data-width="2400"
+                    data-height="1600">
+                    <img class="interior__slider-img" src="./images/interior/5.jpg" alt="">
+                    <img class="interior__slider-magnifier" src="./images/icons/magnifier.svg" alt="">
+                  </a>
+                </div>
+                <div class="interior__slider-item">
+                  <a class="interior__slider-link" href="./images/interior/6.jpg" data-fancybox="interior" data-width="2400"
+                    data-height="1600">
+                    <img class="interior__slider-img" src="./images/interior/6.jpg" alt="">
+                    <img class="interior__slider-magnifier" src="./images/icons/magnifier.svg" alt="">
+                  </a>
+                </div>
+                <div class="interior__slider-item">
+                  <a class="interior__slider-link" href="./images/interior/7.jpg" data-fancybox="interior" data-width="2400"
+                    data-height="1600">
+                    <img class="interior__slider-img" src="./images/interior/7.jpg" alt="">
+                    <img class="interior__slider-magnifier" src="./images/icons/magnifier.svg" alt="">
+                  </a>
+                </div>
+                <div class="interior__slider-item">
+                  <a class="interior__slider-link" href="./images/interior/8.jpg" data-fancybox="interior" data-width="2400"
+                    data-height="1600">
+                    <img class="interior__slider-img" src="./images/interior/8.jpg" alt="">
+                    <img class="interior__slider-magnifier" src="./images/icons/magnifier.svg" alt="">
+                  </a>
+                </div>
+                <div class="interior__slider-item">
+                  <a class="interior__slider-link" href="./images/interior/9.jpg" data-fancybox="interior" data-width="2400"
+                    data-height="1600">
+                    <img class="interior__slider-img" src="./images/interior/9.jpg" alt="">
+                    <img class="interior__slider-magnifier" src="./images/icons/magnifier.svg" alt="">
+                  </a>
+                </div>
+                <!-- <img class="interior__slider-img" src="./images/interior/1.jpg" alt="">
+                <img class="interior__slider-img" src="./images/interior/2.jpg" alt="">
+                <img class="interior__slider-img" src="./images/interior/3.jpg" alt="">
+                <img class="interior__slider-img" src="./images/interior/4.jpg" alt="">
+                <img class="interior__slider-img" src="./images/interior/5.jpg" alt="">
+                <img class="interior__slider-img" src="./images/interior/6.jpg" alt="">
+                <img class="interior__slider-img" src="./images/interior/7.jpg" alt="">
+                <img class="interior__slider-img" src="./images/interior/8.jpg" alt="">
+                <img class="interior__slider-img" src="./images/interior/9.jpg" alt=""> -->
+              </div>
+            </div>
+            <div class="interior__galerry">
+              <div class="interior__items">
+
+                <div class="interior__item">
+                  <img class="interior__img" src="./images/interior/1.jpg" alt="">
+                </div>
+                <div class="interior__item">
+                  <img class="interior__img" src="./images/interior/2.jpg" alt="">
+                </div>
+                <div class="interior__item">
+                  <img class="interior__img" src="./images/interior/3.jpg" alt="">
+                </div>
+                <div class="interior__item">
+                  <img class="interior__img" src="./images/interior/4.jpg" alt="">
+                </div>
+                <div class="interior__item">
+                  <img class="interior__img" src="./images/interior/5.jpg" alt="">
+                </div>
+                <div class="interior__item">
+                  <img class="interior__img" src="./images/interior/6.jpg" alt="">
+                </div>
+                <div class="interior__item">
+                  <img class="interior__img" src="./images/interior/7.jpg" alt="">
+                </div>
+                <div class="interior__item">
+                  <img class="interior__img" src="./images/interior/8.jpg" alt="">
+                </div>
+                <div class="interior__item">
+                  <img class="interior__img" src="./images/interior/9.jpg" alt="">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rules">
+      <div class="container">
+        <div class="rules__inner">
+          <h3 class="rules__title title">Правила заведения</h3>
+          <p class="rules__text">
+            Мы написали эти правила для того, чтобы Вы - наши Гости отдыхали в комфортной атмосфере.
+            Настоящие правила являются неотъемлемой частью договора Оферты (ст. 435 ГК РФ), заключенного между Рестораном и Гостем
+          </p>
+          <p class="rules__text">
+            Желание Гостя (клиента) попасть в ресторан является полным и безоговорочным согласием на адресованную ему оферту (Акцепт
+            ст. 438 ГК РФ). Изъявив желание попасть в ресторан, Гость соглашается со всеми нижеприведенными правилами, а также
+            внутренними инструкциями и регламентами Ресторана. Договор оферты распространяется на мужчин, достигших возраста 21 года
+            и женщин, достигших возраста 18 лет.
+          </p>
+          <ul class="rules__list-top">
+            <li class="rules__item">
+              Вход в Ресторан осуществляется строго по входным контрольным билетам (браслетам). Браслеты необходимо сохранять на руке
+              до окончания пребывания в Ресторане. В случае снятия или утери браслета, администрация имеет право отказать в посещении
+              Ресторана или взять повторную оплату за вход. Передача использованных браслетов не допускается.
+            </li>
+            <li class="rules__item">
+              Посетители Ресторана и их личные вещи могут быть осмотрены службой безопасности. В случае отказа - администрация вправе
+              отказать в доступе в Ресторан.
+            </li>
+            <li class="rules__item">
+              На территории Ресторанов не допускается любое асоциальное поведение или проявление агрессии (в том числе нецензурная
+              лексика, угрозы, повышенный тон) к другим посетителям, сотрудникам и представителям администрации. Не допускается
+              нахождение на территории Ресторана без обуви.
+            </li>
+            <li class="rules__item">
+              На территории Ресторана не допускается курение любых видов сигарет (включая электронные, IQOS).
+            </li>
+            <li class="rules__item">
+              Администрация не несет ответственности за ценные вещи, сданные в гардероб. А также за вещи забытые или оставленные без
+              присмотра в Ресторане.
+            </li>
+            <li class="rules__item">
+              За несоблюдение правил посетитель может быть удален службой безопасности из заведения без возврата стоимости за вход.
+              Также ему может быть отказано в дальнейшем посещении.
+            </li>
+          </ul>
+          <p class="rules__text">
+            Ресторан Потрачено - частная организация. В Ресторане действуют правила Face Control и Dress Code, в соответствии с
+            которыми Администрация имеет право отказать в посещении:
+          </p>
+          <ul class="rules__list-botom">
+            <li class="rules__item">
+              Вход для девушек с 18 лет, для мужчин - с 21 года. При себе необходимо иметь паспорт или водительское удостоверение,
+              подтверждающее ваш возраст. Также Ресторан оставляет за собой право, отказать Гостю в посещении, в случае возникновения
+              сомнений в подлинности документа, возникших у работников Face Control и Dress Code. Предъявление дополнительного
+              документа, подтверждающего личность Гостя, НЕ ЯВЛЯЕТСЯ основанием для предоставления Гостю возможности посещения
+              Ресторана. В данном случае окончательное решение о допуске Гостя в Ресторан принимает Администрация Ресторана.
+            </li>
+            <li class="rules__item">
+              Гости в пляжной, спортивной, специализированной, военной, камуфляжной, рваной или грязной одежде и\или обуви, а также
+              посетители неопрятного вида в заведение не допускаются.
+            </li>
+            <li class="rules__item">
+              Запрещено приносить любые виды оружия и различные виды спец. средств защиты (газовые баллончики, шокеры и т.д.), колющие
+              и режущие предметы, взрывчатые вещества, а также любые сильнодействующие медицинские препараты и наркотические вещества.
+              В случае обнаружения таковых, администрация вправе изъять данные предметы (за исключением запрещенного законом оружия и
+              наркотических средств) до окончания пребывания гостя в Ресторане или отказать посетителю в посещении Ресторана. В случае
+              обнаружения наркотических средств и запрещенного законом оружия и взрывчатых веществ, Гость не допускается к посещению
+              Ресторана, а Администрация Ресторана сообщает о выявленном нарушении в правоохранительные органы.
+            </li>
+            <li class="rules__item">
+              Доступ в Ресторан запрещён агрессивно настроенным лицам по отношению к другим Гостям и/или персоналу Ресторана, а также
+              лицам, употребляющим алкогольные напитки или нарушающим общественный порядок у входа в заведение.
+            </li>
+            <li class="rules__item">
+              Доступ в Ресторан строго запрещён со своими алкогольными (исключением являются банкеты на вечеринке) и безалкогольными
+              напитками. В случае обнаружения таковых, администрация вправе включить в счет гостей пробковый сбор, в размере - 1000
+              рублей/чел. и/или попросить гостей покинуть заведение. Оставить на хранение напитки и продукты можно на ресепшене
+              Ресторана. Если по окончанию работы заведения оставленные напитки и продукты не востребованы их владельцами, они
+              утилизируются.
+            </li>
+            <li class="rules__item">
+              Доступ в Ресторан запрещен агрессивно настроенным гостям. А также гостям в состоянии сильного алкогольного или
+              наркотического опьянения, степень которого Администрация Ресторана определяет по своему усмотрению.
+            </li>
+            <li class="rules__item">
+              Администрация Ресторана оставляет за собой право оценивать соответствие внешнего вида посетителей формату и имиджу
+              заведения.
+            </li>
+            <li class="rules__item">
+              Администрация Заведения вправе отказать Гостю в посещении Заведения, если его внешний вид, элементы одежды, и предметы,
+              находящиеся при нем, могут причинить вред жизни и здоровью самого Гостя или окружающим. Так, в частности, с целью
+              предотвращения и профилактики заболеваний, передающихся через кровь, Гостю может быть отказано в посещении Заведения в
+              случае, если на его теле имеются открытые раны, ссадины, кровоподтеки и свежие шрамы. Администрация вправе отказать
+              гостю в случае наличия на его одежде элементов (цепи, иглы, иные металлические предметы), способных причинить вред
+              самому Гостю или окружающим, равно как и в случае наличия предметов находящихся при Госте или непосредственно на его
+              теле, а также иных предметов, которые могут потенциально причинить вред самому обладателю и другим гостям клуба. При
+              этом Гость может быть допущен в Заведение с предметами, указанными в настоящем пункте, только после согласования
+              посещения с Администрацией Заведения.
+            </li>
+            <li class="rules__item">
+              Гостю может быть отказано в посещении, в случае полной заполняемости Ресторана (отсутствие мест для отдыха), при
+              проведении закрытых вечеринок, а также при наличии нарушений правил Ресторана, допущенных Гостем ранее или иных случаях
+              предусмотренных внутренними правилами Ресторана. При этом Ресторан вправе не называть истинной причины для отказа Гостю
+              в посещении.
+            </li>
+          </ul>
+          <p class="rules__text">
+            Правилами Ресторана запрещено отказывать Гостю в посещении Ресторана по национальным, языковым, гендерным, физическим,
+            умственным или иным не зависящим от человека признакам
+          </p>
+          <p class="rules__text">
+            Любые запреты и ограничения направлены на создание комфортной обстановки для всех гостей Ресторанов РетроДискотека.ру
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./images/icons/logo.svg" alt="">
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Главная
+              </a>
+              <a class="footer__link" href="#">
+                Меню
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Акции
+              </a>
+              <a class="footer__link" href="#">
+                Интерьер
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Команда
+              </a>
+              <a class="footer__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="footer__contacts">
+            <a class="footer__tel" href="tel:+78009999999">8 (800) 999-99-99</a>
+            <p class="footer__time">Бронь столов с 09:00 до 19:00</p>
+            <div class="footer__messenger">
+              <a class="footer__messenger-link" href="#">
+                <img class="footer__messenger-img" src="./images/icons/telegram.svg" alt="">
+              </a>
+              <a class="footer__messenger-link" href="#">
+                <img class="footer__messenger-img" src="./images/icons/viber.svg" alt="">
+              </a>
+              <a class="footer__messenger-link" href="#">
+                <img class="footer__messenger-img" src="./images/icons/inst.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a class="footer__bottom-link" href="#">Политика конфидециальности</a>
+          <a class="footer__bottom-link" href="#">Договор оферты</a>
+          <p class="footer__bottom-text">Информация на сайте не является публичной офертой</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>
